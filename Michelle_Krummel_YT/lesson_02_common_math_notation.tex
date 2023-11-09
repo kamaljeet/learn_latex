@@ -1,0 +1,88 @@
+\documentclass[24pt]{article}
+\pagestyle{empty}
+\usepackage{amsmath, amssymb, amsfonts}
+
+\begin{document}
+
+common mathematical notation
+
+superscripts
+
+single digit in exponent
+$$2x^3$$
+multiple digits in exponent, wrap around curly brackets
+$$2x^{34}$$
+$$2x^{3x+4}$$
+$$2x^{3x^4+5}$$
+
+subscripts
+single digit in subscript
+$$x_1$$
+multiple digits in subscripts
+$$x_{12}$$
+subscripts within subscripts
+$$x_{1_2}$$
+$$x_{1_{2_3}}$$
+sequence\\
+ldots: lower aligned 3 dots for specifying the sequence\\
+cdots: center aligned 3 dots for specifying the sequence\\
+$$a_0, a_1, a_2, \ldots, a_{100}$$
+
+greek letters\\
+lowercase pi\\
+$$\pi$$
+uppercase pi\\
+$$\Pi$$
+greek letter alpha
+$$\alpha$$
+area of rectangle: pi r square, space after backslash pi\\
+otherwise it will become backslash pir\\
+$$A=\pi r^2$$
+
+Trig functions\\
+this is the wrong way\\
+$$y=sin x$$
+this is the right way\\
+$$y=\sin x$$
+$$y=\cos x$$
+$$y=\csc \theta$$
+sin inverse of x\\
+$$y=\sin^{-1} x$$
+$$y=\arcsin x$$
+
+log functions
+$$y=\log x$$
+log with base 5, specify as a subscript\\
+$$y=\log_5 x$$
+natural log\\
+$$y=\ln x$$
+
+roots
+just square root, root of 2\\
+$$\sqrt{2}$$
+cube root\\
+$$\sqrt[3]{2}$$
+$$\sqrt{x^2+y^2}$$
+square root inside square root\\
+$$\sqrt{   1+\sqrt{x}   }$$
+
+fractions\\
+first numerator, then denominator\\
+$$\frac{1}{2}$$
+in math mode, it will resize the fraction to fit rest of the sentance\\
+also the 18pt specified at the end gives 18pt of space after the sentance\\
+empty line inbetween two sentances also gives space between two lines\\
+it will start a paragraph\\
+About $\frac{2}{3}$ of the glass is full.\\[18pt]
+displaystyle within math mode will put equation in displayed math mode\\
+About $\displaystyle \frac{2}{3}$ of the glass is full.\\[10pt]
+dfrac: will put the equation in displayed math mode within the sentance\\
+this is part of one of the math package specified above\\
+About $\dfrac{2}{3}$ of the glass is full.\\[18pt]
+
+fraction of roots\\
+$$\frac{\sqrt{x+1}}{\sqrt{x+2}}$$
+fraction inside fraction\\
+$$\frac{1}{1+\frac{1}{x}}$$
+
+\end{document}
