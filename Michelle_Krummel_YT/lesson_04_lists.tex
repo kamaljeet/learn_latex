@@ -1,0 +1,140 @@
+\documentclass[11pt]{article}
+\usepackage{enumerate}
+
+\begin{document}
+
+TOPIC: creating lists
+
+numbered list\\
+
+\begin{enumerate}
+\item pencil
+\item calculator
+\item ruler
+\item notebook
+\end{enumerate}
+
+\vspace{1cm}
+
+bulletted list\\
+
+\begin{itemize}
+\item pencil
+\item calculator
+\item ruler
+\item notebook
+\end{itemize}
+
+\vspace{1cm}
+
+nested list\\
+
+\begin{enumerate}
+
+\item pencil
+\item calculator
+\item ruler
+\item notebook
+    \begin{enumerate}
+    \item notes
+    \item homework
+    \item assessments
+        \begin{enumerate}
+        \item tests
+        \item quizzes
+        \item journal entries
+        \end{enumerate}
+    \end{enumerate}
+\item highlighters
+\end{enumerate}
+
+\vspace{1cm}
+
+list with capital letter numbering instead of numbers\\
+we have to use the package enumerate for this\\
+\begin{enumerate}[A.]
+\item pencil
+\item calculator
+\item ruler
+\item notebook
+\end{enumerate}
+
+
+\vspace{1cm}
+
+list with roman number numbering instead of numbers\\
+we have to use the package enumerate for this\\
+\begin{enumerate}[i.]
+\item pencil
+\item calculator
+\item ruler
+\item notebook
+\end{enumerate}
+
+
+\vspace{1cm}
+
+list with start with a different number instead of 1\\
+if we want to start with 6 then mention 5\\
+it thinks that the last item was numbered 5\\
+\begin{enumerate} \setcounter{enumi}{5}
+\item pencil
+\item calculator
+\item ruler
+\item notebook
+\end{enumerate}
+
+\vspace{1cm}
+do a page break here \\
+\pagebreak
+
+nested bulletted list\\
+it shows different bullet symbols\\
+\begin{itemize}
+
+\item pencil
+\item calculator
+\item ruler
+\item notebook
+    \begin{itemize}
+    \item notes
+    \item homework
+    \item assessments
+        \begin{itemize}
+        \item tests
+        \item quizzes
+        \item journal entries
+        \end{itemize}
+    \end{itemize}
+\item highlighters
+\end{itemize}
+
+
+\vspace{1cm}
+
+if we do not want the numbers to show for the list items\\
+there will be a space where the number should be but it is hidden\\
+\begin{enumerate}
+\item[] pencil
+\item[] calculator
+\item[] ruler
+\item[] notebook
+\end{enumerate}
+
+\vspace{1cm}
+
+we can number the list manually\\
+labels will be right justified\\
+items will be left justified\\
+\begin{enumerate}
+\item[one] pencil
+\item[two] calculator
+\item[three] ruler
+\item[four] notebook
+\end{enumerate}
+
+
+
+
+
+\end{document}

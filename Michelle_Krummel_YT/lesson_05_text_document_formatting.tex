@@ -1,0 +1,134 @@
+\documentclass[11pt]{article}
+\usepackage{hyperref}
+
+\title{My \LaTeX\ document}
+\author{Kamaljeet Singh}
+\date{July 26, 2020}
+\date{\today}
+
+
+\begin{document}
+
+\tableofcontents
+\maketitle
+
+
+The stuff after the documentclass and before begin document is called as the preamble.\\
+
+backslash maketitle: will print the title, author, date that is mentioned in the preamble.\\
+
+for date, we can manually put any text\\
+or we can add backslash today, so when we compile the document it will check and add that date\\
+
+the backslash tableofcontents will create the table of contents by referring to the sections and subsections in the document\\
+when we compile the document then it will show the heading "contents" and no actual contents under it\\
+we have to compile the document two times for the table of contents to actually show up\\
+
+TOPIC: text and document formatting\\
+
+This will produce \textit{italicized} text.
+
+This will produce \textbf{bold faced} text.
+
+This will produce \textsc{small caps} text.
+
+This will produce \texttt{typewriter text font} text.\\
+typewriter font is monospaced.
+
+use package hyperref to add url reference\\
+it will automatically add a clickable url with typewriter font\\
+Please visit abc's website at \url{https://abc.com}
+
+\vspace{1cm}
+
+using href we can have some clickable text to refer to some website url\\
+Please visit abc's website at \href{https://abc.com}{My Website}
+
+\vspace{1cm}
+
+Please excuse my dear aunt Sally.\\
+
+make --dear aunt Sally-- really large\\
+
+Please excuse my \begin{large}dear aunt Sally\end{large}.
+
+Please excuse my \begin{Large}dear aunt Sally\end{Large}.
+
+Please excuse my \begin{huge}dear aunt Sally\end{huge}.
+
+Please excuse my \begin{Huge}dear aunt Sally\end{Huge}.
+
+Please excuse my \begin{normalsize}dear aunt Sally\end{normalsize}.\\
+this is the same as the first line without any size specified.\\
+
+\vspace{1cm}
+
+now lets do smaller than the normal size
+
+Please excuse my \begin{small}dear aunt Sally\end{small}.
+
+Please excuse my \begin{scriptsize}dear aunt Sally\end{scriptsize}.
+
+Please excuse my \begin{tiny}dear aunt Sally\end{tiny}.
+
+\vspace{2cm}
+
+how to justify text\\
+
+\begin{center}This line is centered.\end{center}
+
+\begin{flushleft}This line is left-justified.\end{flushleft}
+
+\begin{flushright}This line is right-justified.\end{flushright}
+
+\vspace{1cm}
+
+different way to justify text\\
+backslash centering: will make all the text centered that comes after it\\
+
+\centering
+This line is centered.\\
+This line is centered.\\
+This line is centered.\\
+
+\vspace{1cm}
+
+backslash Large: will make all the text Large that comes after it\\
+
+\Large
+This line is large.\\
+This line is large.\\
+This line is large.\\
+
+\vspace{1cm}
+
+backslash tiny: will make all the text tiny that comes after it\\
+
+\tiny
+This line is tiny.\\
+This line is tiny.\\
+This line is tiny.\\
+
+\vspace{1cm}
+
+\normalsize
+\raggedright
+
+TOPIC: sections and subsections\\
+below will show sections and subsections with numbering\\
+if we want to hide the numbering then we can put asterisk (*) just after the words section and subsection\\
+
+\section{Linear Functions}
+  \subsection{Slope-Intercept Form}
+    \subsubsection{Example 1:}
+    \subsubsection{Example 2:}
+  \subsection{Standard Form}
+  \subsection{Point-Slope Form}
+\section{Quadratic Functions}
+  \subsection{Vertex Form}
+  \subsection{Standard Form}
+  \subsection{Factored Form}
+
+
+
+\end{document}

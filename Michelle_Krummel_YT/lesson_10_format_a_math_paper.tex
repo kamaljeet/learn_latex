@@ -1,0 +1,197 @@
+\documentclass[11pt]{article}
+
+% geometry package to change margin size to i inch
+\usepackage[margin=1in]{geometry}
+
+% packages for typesetting math
+\usepackage{amsfonts, amsmath, amssymb}
+
+% package to prevent latex from using hyphenated words
+\usepackage[none]{hyphenat}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+% to create table of contents
+\usepackage[nottoc, notlot, notlof]{tocbibind}
+
+% fancy header package for the title page
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+% clear default header and footer
+\fancyhead{}
+\fancyfoot{}
+
+% capital L for placing title in the left side
+% "MakeUppercase" for making title uppercase
+% "slshape" to make the title italics
+\fancyhead[L]{\slshape \MakeUppercase{Place Title Here}}
+
+% student name in the right side of header
+\fancyhead[R]{\slshape Student Name}
+
+% page number in the center of the footer
+\fancyfoot[C]{\thepage}
+
+% remove horizontal line in header
+% \renewcommand{\headrulewidth}{0pt}
+
+% remove horizontal line in footer
+% \renewcommand{\footrulewidth}{0pt}
+
+
+% remove parapraph indentation
+\parindent 0ex
+
+% set paragraph indent to 4em
+% \setlength{\parindent}{4em}
+
+% set space in-between your paragraphs
+% \setlength{\parskip}{1em}
+
+% line spacing of paragraphs
+\renewcommand{\baselinestretch}{1.5}
+
+
+
+
+
+\begin{document}
+
+
+% title page
+\begin{titlepage}
+\begin{center}
+\vspace*{1cm}
+\Large{ \textbf{IB Mathematics SL}}\\
+\Large{\textbf{Internal Assessment}}\\
+\vfill
+% we can specify some vertical space gap
+\line(1,0){400}\\[1mm]
+\huge{\textbf{This is a Sample Title}}\\[3mm]
+\Large{\textbf{- this is a sample subtitle -}}\\[1mm]
+\line(1,0){400}\\
+\vfill
+By Student Name\\
+Candidate \# 11 \\
+% set today's date
+\today
+\end{center}
+\end{titlepage}
+
+
+
+% create table of contents
+% compile 2 times
+\tableofcontents
+% remove header and footer from contents page
+\thispagestyle{empty}
+% table of contents in its own page
+\clearpage
+
+% start page numbering from 1 now onwards
+\setcounter{page}{1}
+
+
+
+% setup some basic sections in my document by using "backslash section
+% and "backslash subsections
+
+\section{Introduction}
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\\
+
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. \footnote{An example footnote} \\
+% adding footnote
+
+
+\section{Scoring Criteria}
+
+\subsection{Communication}
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software table (see table \ref{tab:data1}) like Aldus PageMaker including versions of Lorem Ipsum.\\
+
+
+
+% adding a table here
+% we will use label for the table so that we can refer to it in our document
+% it has been referred in above paragraph
+% this needs to be compiled 2 times for label to show
+\begin{table}[H]
+    \centering
+        \begin{tabular}{| c | c | c | c |} \hline
+            $x$ & 0 & 1 & 2\\ \hline
+            $f(x)$ & 3 & 6 & 9\\ \hline
+        \end{tabular}
+    \caption{Caption goes here}
+    \label{tab:data1}
+\end{table}
+
+
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software image (see figure \ref{fig:img1}) like Aldus PageMaker including versions of Lorem Ipsum.\\
+
+
+
+% adding image here
+% we will use label for the image so that we can refer to it in our document
+% it has been referred in above paragraph
+% this needs to be compiled 2 times for label to show
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{plot1}
+    \caption{Beautiful plot}
+    \label{fig:img1}
+\end{figure}
+
+
+
+\subsection{Mathematical Presentation}
+
+\subsection{Personal Engagement}
+
+\subsection{Reflection}
+
+\subsection{Use of Mathematics}
+
+\section{Conclusion}
+
+\section{Using \LaTeX\ }
+
+
+
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\cite{DBHS1} \\
+
+% the above "cite" is to refer to the name of item in our bibliography
+% this will show a number which is the item number in bibliography
+
+
+
+% CREATING BIBLIOGRAPHY
+
+
+\pagebreak
+\begin{thebibliography}{}
+
+
+\bibitem{DBHS1}
+Alcoser, Howard.
+``Diamond Bar High School."
+\textit{Internal Assessment: Mathematical Exploration}.
+Web. 27 May 2015.
+
+\bibitem{DBHS2}
+Alcoser, Howard, shilz.
+``Diamond Bar High School 2."
+\textit{Internal Assessment: Mathematical Exploration number 2}.
+Web. 27 May 2016.
+
+
+
+\end{thebibliography}
+
+
+
+
+\end{document}

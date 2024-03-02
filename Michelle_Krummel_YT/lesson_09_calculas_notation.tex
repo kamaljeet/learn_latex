@@ -1,0 +1,107 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.75in, paperwidth=8.5in, paperheight=11in]{geometry}
+
+\begin{document}
+
+
+The function $f(x)=(x-3)^2+\frac{1}{2}$ has domain $\mathrm{D}_f:(-\infty, \infty)$ and range $\mathrm{R}_f:\left[\frac{1}{2}, \infty\right) $
+\\
+here above, "infty" is used for infinity, "mathrm" is used so that "D" is not displayed as italics under math mode.\\
+
+
+
+$\lim \limits_{x \to a}$\\
+if we do not use "limits" then the subscript will appear on the right side, not under "lim"\\
+
+$\lim \limits_{x \to a^-}f(x)$\\
+if we want, as limit approaches a from the right hand side\\
+then we will put "caret plus"\\
+if we want as, limit approches a from the left hand side\\
+then we will put "caret minus"\\
+
+$\lim \limits_{x \to a} \frac{f(x)-f(a)}{x-a}=f'(a)$\\
+in the above equation, the fraction takes up same space as the rest of the line\\
+so we will use "displaystyle" to make the fraction look bigger\\
+
+$\displaystyle{\lim \limits_{x \to a} \frac{f(x)-f(a)}{x-a}=f'(a)}$\\
+
+
+INTEGRAL\\
+
+$\int \sin x \,dx=-cos x + C$\\
+backslash int is for integral\\
+
+$\displaystyle{\int \sin x \,dx=-cos x + C}$\\
+if we use "displaystyle", then the integral symbol appears bigger\\
+
+
+DEFINITE INTEGRAL\\
+
+$\int_a^b$\\
+here the limits a and b appear to the right of the integral symbol\\
+
+$\int \limits_a^b$\\
+here the limits a and b appear to the bottom and top of the integral symbol\\
+
+if you want the integral symbol to be elongated then use "displaystyle"\\
+$\displaystyle{\int_a^b}$\\
+$\displaystyle{\int \limits_a^b}$\\
+
+if our limit is more than 2 caharacters, then we cannot just use a caret\\
+it will not be displayed properly like below\\
+$\displaystyle{\int \limits_2a^b}$\\
+
+so to fix this we should put the upper and lower limits inside curly brackets\\
+$\displaystyle{\int \limits_{2a}^{b}}$\\
+
+lets take integral of something\\
+$\displaystyle{\int \limits_{a}^{b}x^2 \,dx=[\frac{x^3}{3}]_{a}^{b}}$\\
+here the brackets dont look good\\
+the brackets have to be expanded\\
+
+$\displaystyle{\int \limits_{a}^{b}x^2 \,dx=\left[\frac{x^3}{3}\right]_{a}^{b}}$\\
+that looks much better\\
+we added backslash left bracket symbol\\
+and backslash right bracket symbol\\
+
+lets finish evaluating our equation\\
+$\displaystyle{\int \limits_{a}^{b}x^2 \,dx=\left[\frac{x^3}{3}\right]_{a}^{b}=\frac{b^3}{3}-\frac{a^3}{3}}$\\
+
+
+SUMMATION NOTATION:\\
+
+$\sum$\\
+this looks smaller\\
+
+$\displaystyle{\sum}$\\
+this looks much better, larger\\
+
+
+$\displaystyle{\sum \limits_{n=1}^{\infty}}$\\
+
+$\displaystyle{     \sum \limits_{n=1}^{\infty}  ar^n=a+ar+ar^2+...+ar^n   }$\\
+the above puts dots not aligned properly\\
+so we will use "cdot" for single dot, or "cdots" for three dots, which will be aligned properly\\
+
+$\displaystyle{     \sum \limits_{n=1}^{\infty}  ar^n=a+ar+ar^2+  \cdots   +ar^n   }$\\
+
+
+
+$\displaystyle{   \int_a^b f(x) \,dx=\lim \limits_{x \to \infty} \sum \limits_{k=1}^{n} f(x_k) \cdot \Delta x  }$\\
+"backslash delta" is for small delta greek symbol\\
+"backslash Delta" is for big delta greek symbol\\
+
+
+VECTORS:\\
+
+
+$\vec{v}=v_1 \vec{i}+v_2 \vec{j}=\langle v_1,v_2 \rangle$\\
+"backslash vec" for vector\\
+"backslash langle" for left angular bracket\\
+"backslash rangle" for right angular bracket\\
+
+
+
+
+\end{document}
